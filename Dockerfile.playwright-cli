@@ -1,0 +1,14 @@
+FROM node:24-bookworm-slim
+
+ENV DEBIAN_FRONTEND=noninteractive \
+    HOME=/tmp/home \
+    PLAYWRIGHT_BROWSERS_PATH=/ms-playwright
+
+RUN npm install --global @playwright/cli@0.1.22 \
+    && playwright-cli install-browser chromium --with-deps \
+    && mkdir -p /workspace /tmp/home \
+    && chmod 1777 /workspace /tmp/home
+
+WORKDIR /workspace
+
+ENTRYPOINT ["playwright-cli"]

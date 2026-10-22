@@ -1,0 +1,22 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:chrome": "PLAYWRIGHT_USE_SYSTEM_CHROME=1 playwright test",
+    "test:salesforce": "playwright test tests/salesforce-lightning.spec.ts",
+    "test:chrome:salesforce": "PLAYWRIGHT_USE_SYSTEM_CHROME=1 playwright test tests/salesforce-lightning.spec.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.5"
+  }
+}
