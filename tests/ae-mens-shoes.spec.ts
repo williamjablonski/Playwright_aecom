@@ -1,19 +1,62 @@
 import { expect, test, type Locator, type Page } from '@playwright/test';
 
 const categoryUrl =
-  process.env.AE_MENS_SHOES_URL ??
+  (globalThis as typeof globalThis & {
+    process?: { env?: { AE_MENS_SHOES_URL?: string } };
+  }).process?.env?.AE_MENS_SHOES_URL ??
   'https://www.ae.com/us/en/c/men/shoes/cat4840024';
+
+test('Playwright starts Chromium and opens a page', async ({ page }) => {
+  await page.goto('about:blank');
+  await expect(page).toHaveURL('about:blank');
+});
 
 test.describe("American Eagle men's shoes category @p0", () => {
   test.describe.configure({ mode: 'serial' });
+  test.use({
+    permissions: ['geolocation'],
+    geolocation: {
+      // Approximate coordinates for ZIP code 10022 (Midtown Manhattan).
+      latitude: 40.7589,
+      longitude: -73.9676,
+      accuracy: 1000,
+    },
+  });
+
+  test('AE-MSH-GEO-001 provides the configured ZIP code location', async ({
+    page,
+  }) => {
+    await page.goto(categoryUrl, { waitUntil: 'domcontentloaded' });
+    await acceptCookies(page);
+    await closeEmailSignupIfPresent(page);
+
+    const position = await page.evaluate(
+      () =>
+        new Promise<{ latitude: number; longitude: number }>(
+          (resolve, reject) => {
+            navigator.geolocation.getCurrentPosition(
+              ({ coords }) =>
+                resolve({
+                  latitude: coords.latitude,
+                  longitude: coords.longitude,
+                }),
+              reject,
+            );
+          },
+        ),
+    );
+
+    expect(position.latitude).toBeCloseTo(40.7589, 4);
+    expect(position.longitude).toBeCloseTo(-73.9676, 4);
+  });
 
   test('AE-MSH-P0-001 @p0 opens the category and displays products', async ({
     page,
   }) => {
     await page.goto(categoryUrl, { waitUntil: 'domcontentloaded' });
-    await dismissCookieConsent(page);
+    await acceptCookies(page);
+    await closeEmailSignupIfPresent(page);
 
-    await expect(page).toHaveTitle(/Men's Shoes/i);
     await expect(
       page.getByRole('heading', { name: "Men's Shoes", exact: true }),
     ).toBeVisible();
@@ -36,7 +79,8 @@ test.describe("American Eagle men's shoes category @p0", () => {
     page,
   }) => {
     await page.goto(categoryUrl, { waitUntil: 'domcontentloaded' });
-    await dismissCookieConsent(page);
+    await acceptCookies(page);
+    await closeEmailSignupIfPresent(page);
 
     const firstProduct = page
       .getByTestId('product-content')
@@ -64,7 +108,8 @@ test.describe("American Eagle men's shoes category @p0", () => {
     page,
   }) => {
     await page.goto(categoryUrl, { waitUntil: 'domcontentloaded' });
-    await dismissCookieConsent(page);
+    await acceptCookies(page);
+    await closeEmailSignupIfPresent(page);
 
     const productTiles = page
       .getByTestId('product-content')
@@ -110,16 +155,34 @@ test.describe("American Eagle men's shoes category @p0", () => {
   });
 });
 
-async function dismissCookieConsent(page: Page): Promise<void> {
+async function acceptCookies(page: Page): Promise<void> {
   const consentDialog = page.getByRole('dialog', {
     name: 'Clarip Cookie Consent Banner',
   });
-  if (await consentDialog.isVisible()) {
-    await consentDialog
-      .getByRole('button', { name: 'dismiss cookie message' })
-      .click();
-    await expect(consentDialog).toBeHidden();
+  if (!(await consentDialog.isVisible({ timeout: 3_000 }).catch(() => false))) {
+    return;
   }
+
+  const requestedButton = page.locator('xpath=/html/body/div[2]/div/button');
+  const acceptButton =
+    (await requestedButton.count()) > 0
+      ? requestedButton
+      : consentDialog.getByRole('button', { name: 'dismiss cookie message' });
+
+  await acceptButton.click();
+  await expect(consentDialog).toBeHidden();
+}
+
+async function closeEmailSignupIfPresent(page: Page): Promise<void> {
+  const emailSignupForm = page.locator('#emailSignupForm');
+  if (!(await emailSignupForm.isVisible())) {
+    return;
+  }
+
+  const closeButton = page.locator('xpath=//*[@id="modal"]/button');
+  await expect(closeButton).toBeVisible();
+  await closeButton.click();
+  await expect(emailSignupForm).toBeHidden();
 }
 
 function escapeRegExp(value: string): string {

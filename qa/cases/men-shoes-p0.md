@@ -8,6 +8,7 @@
 - **Limitação:** a sessão do navegador Playwright não iniciou. Os casos abaixo foram identificados a partir do conteúdo servido; interações e resultados ainda precisam ser validados em navegador.
 - **Critério de prioridade:** P0 significa bloqueador do fluxo principal de descoberta e seleção de calçado nesta página. A prioridade não representa severidade de defeito.
 - **Persona:** cliente sem autenticação, comprando calçados masculinos nos EUA.
+- **Localização de teste:** permissão de geolocalização habilitada na spec, com coordenadas aproximadas do CEP 10022 (Midtown Manhattan); precisão configurada em 1.000 m. Não representa um endereço exato.
 - **Execução:** NOT_RUN — pesquisa exploratória não substitui a execução dos casos.
 
 ## Casos de teste
