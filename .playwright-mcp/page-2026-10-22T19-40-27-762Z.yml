@@ -1,0 +1,403 @@
+- generic [active] [ref=e1]:
+  - link [aria-hidden] [ref=e544] [cursor=pointer]:
+    - /url: "#"
+    - text: ___
+  - generic [ref=e9]:
+    - generic [ref=e10]:
+      - link "Enable Accessibility" [ref=e11] [cursor=pointer]:
+        - /url: "#"
+      - link "Accessibility Statement" [ref=e13] [cursor=pointer]:
+        - /url: /us/en/accessibility
+      - region "Carousel" [ref=e548]:
+        - group [ref=e665]:
+          - generic [ref=e668]:
+            - text: 30-40% off all jeans & pants!
+            - button [ref=e670] [cursor=pointer]
+            - button [ref=e677] [cursor=pointer]
+            - link "Details" [ref=e683] [cursor=pointer]:
+              - /url: /us/en/content/help/terms-and-conditions?details=PricesAsMarked
+        - generic:
+          - button "Previous slide" [ref=e557] [cursor=pointer]
+          - button "Next slide" [ref=e560] [cursor=pointer]
+        - img [ref=e563]:
+          - button "Show slide 0" [ref=e564] [cursor=pointer]
+          - button "Show slide 1" [ref=e565] [cursor=pointer]
+          - button "Show slide 2" [ref=e566] [cursor=pointer]
+      - button "Stop auto-rotation" [ref=e567] [cursor=pointer]
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - link "Go to Shop AE homepage." [ref=e16] [cursor=pointer]:
+          - /url: /us/en
+        - link "Go to Shop Aerie homepage." [ref=e20] [cursor=pointer]:
+          - /url: /us/en/c/aerie/cat4840006
+      - generic [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26] [cursor=pointer]:
+            - link "Account" [ref=e27]:
+              - /url: "#"
+          - listitem [ref=e32]:
+            - link "Favorites" [ref=e33] [cursor=pointer]:
+              - /url: /us/en/favorites
+          - listitem [ref=e37]:
+            - link "0 Checkout" [ref=e38] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e41]: "0"
+              - generic [ref=e43]: Checkout
+        - dialog "flyout-ember183" [ref=e570]:
+          - button "Close" [ref=e571] [cursor=pointer]
+          - heading "Where are you shipping to?" [level=3] [ref=e574]
+          - generic [ref=e575]:
+            - button [ref=e576] [cursor=pointer]:
+              - img "United States flag" [ref=e577]
+              - generic [ref=e578]: Ship toUnited States
+            - button [ref=e579] [cursor=pointer]:
+              - img "Brazil flag" [ref=e580]
+              - generic [ref=e581]: Ship toBrazil*
+          - button "See All Countries" [ref=e582] [cursor=pointer]
+          - generic [ref=e583]:
+            - text: "*You will be responsible for any duties and taxes, prices will be in U.S. dollars ($USD) and product assortment may vary. By continuing, you agree to the"
+            - link "Privacy Notice" [ref=e584] [cursor=pointer]:
+              - /url: /intl/en/content/help/privacy-notice
+            - text: and
+            - link "Terms of Use" [ref=e585] [cursor=pointer]:
+              - /url: /intl/en/content/help/terms-of-use
+            - text: .
+    - generic [ref=e44]:
+      - link [ref=e45] [cursor=pointer]:
+        - /url: /us/en
+        - img "Shop AE" [ref=e47]
+      - button "Search Search" [ref=e684] [cursor=pointer]:
+        - generic [ref=e688]: Search
+        - generic [ref=e689]: Search
+    - navigation [ref=e56]:
+      - list [ref=e57]:
+        - listitem [ref=e58]:
+          - button "Today's Offers" [ref=e59] [cursor=pointer]
+        - listitem [ref=e72]:
+          - link "Gifts" [ref=e73] [cursor=pointer]:
+            - /url: /us/en/c/gifts/cat200005
+          - button "Gifts"
+        - listitem [ref=e75]:
+          - button "New" [ref=e76]
+        - listitem [ref=e81]:
+          - link "Women" [ref=e82] [cursor=pointer]:
+            - /url: /us/en/c/women/womens
+          - button "Women"
+        - listitem [ref=e84]:
+          - link "Men" [ref=e85] [cursor=pointer]:
+            - /url: /us/en/c/men/mens
+          - button "Men"
+        - listitem [ref=e87]:
+          - link "Jeans" [ref=e88] [cursor=pointer]:
+            - /url: /us/en/x/jeans?menu=cat4840004&pagetype=slp
+          - button "Jeans"
+        - listitem [ref=e90]:
+          - button "Loungewear & PJs" [ref=e91]
+        - listitem [ref=e96]:
+          - link "Aerie" [ref=e97] [cursor=pointer]:
+            - /url: /us/en/c/aerie/cat4840006
+        - listitem [ref=e99]:
+          - link "Clearance" [ref=e100] [cursor=pointer]:
+            - /url: /us/en/x/clearance?menu=cat4840004&pagetype=slp
+          - button "Clearance"
+    - generic [ref=e102]: The page navigation is complete. You may now navigate the page content as you wish.
+    - link "Skip to main content" [ref=e103] [cursor=pointer]:
+      - /url: "#main-content-focus"
+    - generic [ref=e106]:
+      - generic [ref=e110]:
+        - generic [ref=e111]: 30% Off All 1000+ New Arrivals
+        - generic [ref=e120]:
+          - link "Shop Women" [ref=e122] [cursor=pointer]:
+            - /url: /us/en/c/women/new-arrivals/brg_dyn_hqya6u718b
+          - link "Shop Men" [ref=e125] [cursor=pointer]:
+            - /url: /us/en/c/men/new-arrivals/brg_dyn_fiqvft6w17
+        - generic [ref=e130]:
+          - generic [ref=e131]: Exclusions apply.
+          - link "Details" [ref=e132] [cursor=pointer]:
+            - /url: /us/en/content/help/terms-and-conditions?details=PricesAsMarked
+      - generic [ref=e135]:
+        - generic [ref=e139]:
+          - generic [ref=e140]: Sorry, your browser does not support embedded videos.
+          - button "pause" [ref=e142] [cursor=pointer]
+        - generic [ref=e148]:
+          - generic [ref=e149]: just dropped!
+          - generic [ref=e150]: THE LOWEST RISE EXTRA BAGGY
+          - generic [ref=e151]: Our must-have fit of the season, puddled to perfection with a longer inseam.
+          - link "Shop Now" [ref=e156] [cursor=pointer]:
+            - /url: /us/en/c/women/jeans/baggy-wide-leg-jeans/cat790010
+      - generic [ref=e161]:
+        - generic [ref=e162]: 30-40% Off All Jeans & Pants
+        - generic [ref=e170]:
+          - button [ref=e172] [cursor=pointer]
+          - button [ref=e179] [cursor=pointer]
+        - generic [ref=e188]:
+          - generic [ref=e189]: Exclusions apply.
+          - link "Details" [ref=e190] [cursor=pointer]:
+            - /url: /us/en/content/help/terms-and-conditions?details=PricesAsMarked
+      - generic [ref=e193]:
+        - generic [ref=e197]:
+          - generic [ref=e198]: Sorry, your browser does not support embedded videos.
+          - generic [ref=e199]:
+            - button "unmute" [ref=e200] [cursor=pointer]
+            - button "pause" [ref=e203] [cursor=pointer]
+        - generic [ref=e209]:
+          - generic [ref=e210]: NEW ARRIVALS ARE HERE
+          - generic [ref=e211]: Fresh off the sleigh!
+          - button [ref=e215] [cursor=pointer]
+      - generic [ref=e224]:
+        - generic [ref=e227]:
+          - generic [ref=e228]: SNOW STOPPER SWEATERS
+          - link "Shop Now" [ref=e233] [cursor=pointer]:
+            - /url: /us/en/p/women/tops/sweaters-cardigans/ae-snow-stopper-half-zip-sweater/0341_2061_600
+        - generic [ref=e237]:
+          - generic [ref=e238]: COZY CABIN SWEATERS
+          - link "Shop Now" [ref=e243] [cursor=pointer]:
+            - /url: /us/en/c/men/tops/sweaters/cat4860026
+        - generic [ref=e247]:
+          - generic [ref=e248]: WHOA SO SOFT SWEATERS
+          - link "Shop Now" [ref=e253] [cursor=pointer]:
+            - /url: /us/en/c/women/whoa-so-soft-sweaters/brg_dyn_1or67rgsbr
+        - generic [ref=e257]:
+          - generic [ref=e258]: HEAVYWEIGHT FLANNELS
+          - link "Shop Now" [ref=e263] [cursor=pointer]:
+            - /url: /us/en/c/men/tops/shirts/flannel-shirts/brg_dyn_dpmemwvpdu
+      - generic [ref=e266]:
+        - generic [ref=e270]:
+          - generic [ref=e271]: Sorry, your browser does not support embedded videos.
+          - generic [ref=e272]:
+            - button "unmute" [ref=e273] [cursor=pointer]
+            - button "pause" [ref=e276] [cursor=pointer]
+        - generic [ref=e282]:
+          - generic [ref=e283]: gift guide
+          - generic [ref=e284]: There’s no time like the present to find the perfect fit – and the perfect gift.
+          - link "Shop Now" [ref=e289] [cursor=pointer]:
+            - /url: /us/en/c/gifts/cat200005
+      - generic [ref=e294]:
+        - generic [ref=e297]:
+          - generic [ref=e298]: GET IT FAST
+          - generic [ref=e299]: Order online & pick up at any AE store.
+          - link "Find a Store" [ref=e304] [cursor=pointer]:
+            - /url: https://storelocations.ae.com/search.html
+        - generic [ref=e308]:
+          - generic [ref=e309]: THE GIFT THAT ALWAYS FITS
+          - generic [ref=e310]: Gift cards & e-gift cards with scheduled delivery!
+          - link "Shop Gift Cards" [ref=e315] [cursor=pointer]:
+            - /url: /us/en/x/gift-cards
+        - generic [ref=e319]:
+          - generic [ref=e320]: GET WHAT YOU REALLY WANT
+          - generic [ref=e321]: Make your wishlist come true.
+          - link "Save Your Favorites" [ref=e326] [cursor=pointer]:
+            - /url: /us/en/favorites
+      - generic [ref=e329]:
+        - generic [ref=e330]:
+          - generic [ref=e334]:
+            - generic [ref=e335]: Women's New Arrivals
+            - link [ref=e336] [cursor=pointer]:
+              - /url: /us/en/c/women/new-arrivals/brg_dyn_hqya6u718b
+          - generic [ref=e339]:
+            - generic [ref=e340]: Bestselling Gifts For Her
+            - link "Bestselling Gifts For Her" [ref=e341] [cursor=pointer]:
+              - /url: /us/en/c/gift-guide/bestselling-gifts-for-her/cat3110099
+          - generic [ref=e345]:
+            - generic [ref=e346]: Women's Tops
+            - link [ref=e347] [cursor=pointer]:
+              - /url: /us/en/c/women/tops/cat10049
+          - generic [ref=e350]:
+            - generic [ref=e351]: Women’s Jeans
+            - link "Women’s Jeans" [ref=e352] [cursor=pointer]:
+              - /url: /us/en/c/women/bottoms/jeans/cat6430042
+          - generic [ref=e356]:
+            - generic [ref=e357]: Women’s Loungewear & PJs
+            - link "Women’s Loungewear & PJs" [ref=e358] [cursor=pointer]:
+              - /url: /us/en/c/women/loungewear-pjs/cat730011
+          - generic [ref=e362]:
+            - generic [ref=e363]: Men's New Arrivals
+            - link [ref=e364] [cursor=pointer]:
+              - /url: /us/en/c/men/new-arrivals/brg_dyn_fiqvft6w17
+          - generic [ref=e367]:
+            - generic [ref=e368]: Bestselling Gifts For Him
+            - link "Bestselling Gifts For Him" [ref=e369] [cursor=pointer]:
+              - /url: /us/en/c/gift-guide/bestselling-gifts-for-him/cat3110100
+          - generic [ref=e373]:
+            - generic [ref=e374]: Men's Tops
+            - link "Men's Tops" [ref=e375] [cursor=pointer]:
+              - /url: /us/en/c/men/tops/cat10025
+          - generic [ref=e379]:
+            - generic [ref=e380]: Men’s Jeans & Joggers
+            - link "Men's Jeans" [ref=e381] [cursor=pointer]:
+              - /url: /us/en/c/men/bottoms/cat10027
+          - generic [ref=e385]:
+            - generic [ref=e386]: Men's Underwear
+            - link "Men's Underwear" [ref=e387] [cursor=pointer]:
+              - /url: /us/en/c/men/underwear/cat10032
+        - button "Slide backward" [ref=e389] [cursor=pointer]
+    - contentinfo [ref=e391]:
+      - generic [ref=e392]:
+        - list [ref=e393]:
+          - listitem [ref=e394]:
+            - button "Chat with Us" [ref=e395] [cursor=pointer]
+          - listitem [ref=e398]:
+            - link "Earn 16% Back* — See If You Prequalify" [ref=e399] [cursor=pointer]:
+              - /url: https://apply.syf.com/eapply/eapply.action?clientCode=AE&preQual=Y&sitecode=aetlpl7d2
+          - listitem [ref=e403]:
+            - link "Send a Holiday Card, Get 10% Off!" [ref=e404] [cursor=pointer]:
+              - /url: https://www.ae.com/us/en/content/ae-refer-a-friend?traffic_source=ae-website-footer
+        - navigation [ref=e408]:
+          - list [ref=e409]:
+            - listitem [ref=e410]:
+              - generic [ref=e411]:
+                - heading "Help" [level=6] [ref=e412]
+                - list "Help" [ref=e413]:
+                  - listitem [ref=e414]:
+                    - link "Track Order" [ref=e415] [cursor=pointer]:
+                      - /url: /us/en/trackorder
+                  - listitem [ref=e416]:
+                    - link "Return Policy" [ref=e417] [cursor=pointer]:
+                      - /url: /us/en/content/help/return-policy
+                  - listitem [ref=e418]:
+                    - link "Pay Real Rewards Credit Card Bill" [ref=e419] [cursor=pointer]:
+                      - /url: https://www.synchrony.com/accounts/?client=aeoutfitters
+                  - listitem [ref=e420]:
+                    - link "Contact Us" [ref=e421] [cursor=pointer]:
+                      - /url: /us/en/content/help/contact-us
+                  - listitem [ref=e422]:
+                    - link "Help & FAQ" [ref=e423] [cursor=pointer]:
+                      - /url: /us/en/content/help/home
+                  - listitem [ref=e424]:
+                    - link "Feedback" [ref=e425] [cursor=pointer]:
+                      - /url: https://aeo.co1.qualtrics.com/jfe/form/SV_eh2MAshrrFcWTUp
+            - listitem [ref=e426]:
+              - generic [ref=e427]:
+                - heading "Connect & Earn" [level=6] [ref=e428]
+                - list "Connect & Earn" [ref=e429]:
+                  - listitem [ref=e430]:
+                    - 'link "Real Rewards: Earn 4% (or More) Back" [ref=e431] [cursor=pointer]':
+                      - /url: /us/en/myaccount/real-rewards
+                  - listitem [ref=e432]:
+                    - link "Real Rewards Credit Card" [ref=e433] [cursor=pointer]:
+                      - /url: /us/en/content/credit
+                  - listitem [ref=e434]:
+                    - button "Sign Up for Email" [ref=e435] [cursor=pointer]
+                  - listitem [ref=e436]:
+                    - button "Sign Up for Texts" [ref=e437] [cursor=pointer]
+                  - listitem [ref=e438]:
+                    - 'link "AE Blog: Live Your Life" [ref=e439] [cursor=pointer]':
+                      - /url: https://blog.ae.com/?navdetail=footer:c1:p8
+            - listitem [ref=e440]:
+              - generic [ref=e441]:
+                - heading "More Ways to Shop" [level=6] [ref=e442]
+                - list "More Ways to Shop" [ref=e443]:
+                  - listitem [ref=e444]:
+                    - link "Store Locator" [ref=e445] [cursor=pointer]:
+                      - /url: https://storelocations.ae.com/search.html
+                  - listitem [ref=e446]:
+                    - link "Refer a Friend & Get 10% Off" [ref=e447] [cursor=pointer]:
+                      - /url: https://www.ae.com/us/en/content/ae-refer-a-friend?traffic_source=ae-footer-column
+                  - listitem [ref=e448]:
+                    - link "Book a Stylist Appointment" [ref=e449] [cursor=pointer]:
+                      - /url: /us/en/content/appointments
+                  - listitem [ref=e450]:
+                    - 'link "#AEJeans: Show How You Wear It" [ref=e451] [cursor=pointer]':
+                      - /url: /us/en/stylegallery
+                  - listitem [ref=e452]:
+                    - link "Download the App" [ref=e453] [cursor=pointer]:
+                      - /url: /us/en/x/mobile-app
+            - listitem [ref=e454]:
+              - generic [ref=e455]:
+                - heading "Trending Categories" [level=6] [ref=e456]
+                - list "Trending Categories" [ref=e457]:
+                  - listitem [ref=e458]:
+                    - link "Women's New Arrivals" [ref=e459] [cursor=pointer]:
+                      - /url: /us/en/c/women/new-arrivals/brg_dyn_hqya6u718b
+                  - listitem [ref=e460]:
+                    - link "Women’s Jeans" [ref=e461] [cursor=pointer]:
+                      - /url: /us/en/c/women/bottoms/jeans/cat6430042
+                  - listitem [ref=e462]:
+                    - link "Men’s New Arrivals" [ref=e463] [cursor=pointer]:
+                      - /url: /us/en/c/men/new-arrivals/brg_dyn_fiqvft6w17
+                  - listitem [ref=e464]:
+                    - link "Men’s Jeans" [ref=e465] [cursor=pointer]:
+                      - /url: /us/en/c/men/bottoms/jeans/cat6430041
+                  - listitem [ref=e466]:
+                    - link "Clearance" [ref=e467] [cursor=pointer]:
+                      - /url: /us/en/x/clearance?menu=cat4840004&pagetype=slp
+                  - listitem [ref=e468]:
+                    - link "Product Collections" [ref=e469] [cursor=pointer]:
+                      - /url: https://www.ae.com/us/en/o/pt/index
+                  - listitem [ref=e470]:
+                    - link "Gift Cards" [ref=e471] [cursor=pointer]:
+                      - /url: /us/en/x/gift-cards
+            - listitem [ref=e472]:
+              - generic [ref=e473]:
+                - heading "About Us" [level=6] [ref=e474]
+                - list "About Us" [ref=e475]:
+                  - listitem [ref=e476]:
+                    - link "About AEO" [ref=e477] [cursor=pointer]:
+                      - /url: https://www.aeo-inc.com/?navdetail=footer:c2:p8
+                  - listitem [ref=e478]:
+                    - link "AE Foundation" [ref=e479] [cursor=pointer]:
+                      - /url: https://blog.ae.com/ae-foundation/
+                  - listitem [ref=e480]:
+                    - link "Investors" [ref=e481] [cursor=pointer]:
+                      - /url: https://investors.ae.com/investor-home/default.aspx
+                  - listitem [ref=e482]:
+                    - link "Careers" [ref=e483] [cursor=pointer]:
+                      - /url: https://hcml.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/AEO-Careers/
+                  - listitem [ref=e484]:
+                    - link "AE Creator Community" [ref=e485] [cursor=pointer]:
+                      - /url: https://community.ae.com/
+                  - listitem [ref=e486]:
+                    - link "Affiliate Program" [ref=e487] [cursor=pointer]:
+                      - /url: https://auth.rakutenmarketing.com/auth/realms/rakuten-advertising/protocol/openid-connect/registrations?client_id=publisher-dashboard&redirect_uri=https%3A%2F%2Fpublisher.rakutenadvertising.com&response_type=code&icid=cp_page_other_rakuten_sign_up_120768_4HG3WCGXH2
+                  - listitem [ref=e488]:
+                    - link "Site Map" [ref=e489] [cursor=pointer]:
+                      - /url: /us/en/sitemap
+      - generic [ref=e492]:
+        - list [ref=e493]:
+          - listitem [ref=e494]:
+            - link "Facebook link" [ref=e495] [cursor=pointer]:
+              - /url: https://www.facebook.com/americaneagle
+          - listitem [ref=e498]:
+            - link "Instagram link" [ref=e499] [cursor=pointer]:
+              - /url: https://www.instagram.com/americaneagle
+          - listitem [ref=e502]:
+            - link "Pinterest link" [ref=e503] [cursor=pointer]:
+              - /url: https://www.pinterest.com/americaneagle/
+          - listitem [ref=e506]:
+            - link "TikTok link" [ref=e507] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@americaneagle
+          - listitem [ref=e510]:
+            - link "Snapchat link" [ref=e511] [cursor=pointer]:
+              - /url: https://www.snapchat.com/@aeo
+          - listitem [ref=e514]:
+            - link "Substack link" [ref=e515] [cursor=pointer]:
+              - /url: https://substack.com/@americaneagle
+        - button "change i18n settings" [ref=e518] [cursor=pointer]:
+          - generic [ref=e519]: United States ($USD)
+        - list [ref=e522]:
+          - listitem [ref=e523]:
+            - link "Accessibility Statement" [ref=e524] [cursor=pointer]:
+              - /url: /us/en/accessibility
+          - listitem [ref=e525]:
+            - link "Privacy Notice" [ref=e526] [cursor=pointer]:
+              - /url: /us/en/content/help/privacy-notice
+          - listitem [ref=e527]:
+            - link "Notice at Collection" [ref=e528] [cursor=pointer]:
+              - /url: /us/en/content/help/privacy-notice?details=sec10
+          - listitem [ref=e529]:
+            - link "Terms of Use" [ref=e530] [cursor=pointer]:
+              - /url: /us/en/content/help/terms-of-use
+          - listitem [ref=e531]:
+            - link "Data Request" [ref=e532] [cursor=pointer]:
+              - /url: https://www.ae.com/datarequest
+          - listitem [ref=e533]:
+            - button "Your Privacy Choices" [ref=e534] [cursor=pointer]
+          - listitem [ref=e537]:
+            - link "California Disclosures" [ref=e538] [cursor=pointer]:
+              - /url: /us/en/content/help/california-disclosures
+          - listitem [ref=e539]:
+            - link "Brand Protection" [ref=e540] [cursor=pointer]:
+              - /url: /us/en/content/help/brand-protection
+        - paragraph [ref=e541]: © 2026 AEO Management Co. All Rights Reserved
+        - paragraph [ref=e542]: US Guest 81256EB0 v129 east4
+        - img "Brand Icons" [ref=e543]

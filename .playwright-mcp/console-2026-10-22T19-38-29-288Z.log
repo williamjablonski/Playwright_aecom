@@ -1,0 +1,20 @@
+[   21993ms] [WARNING] [waitForCookie] Timed out waiting for cookie: ae_clarip_consent @ https://www.ae.com/us/en:38
+[   24626ms] [ERROR] Failed to load resource: the server responded with a status of 451 () @ https://di.rlcdn.com/api/segment?pid=711444&pdata=type%3Dhomepage%2Cpage_brand%3DAE%2Cauthenticated%3Dn:0
+[   26218ms] [ERROR] Creating a worker from 'https://analytics.ae.com/_/service_worker/6a60/sw.js?origin=https%3A%2F%2Fwww.ae.com' violates the following Content Security Policy directive: "worker-src 'none'". The action has been blocked. @ https://analytics.ae.com/_/service_worker/6a60/sw_iframe.html?origin=https%3A%2F%2Fwww.ae.com&1p=1:14
+[   27402ms] [ERROR] Permissions policy violation: accelerometer is not allowed in this document. @ https://analytics.ae.com/sAgtHeDE7/e9jwJkPKg/kYQ3pJh46wkhNL/GTNPZSY/FG5Cdl07/O14:0
+[   27408ms] [WARNING] The deviceorientation events are blocked by permissions policy. See https://github.com/w3c/webappsec-permissions-policy/blob/master/features.md#sensor-features @ https://analytics.ae.com/sAgtHeDE7/e9jwJkPKg/kYQ3pJh46wkhNL/GTNPZSY/FG5Cdl07/O14:0
+[   27409ms] [ERROR] Permissions policy violation: accelerometer is not allowed in this document. @ https://analytics.ae.com/sAgtHeDE7/e9jwJkPKg/kYQ3pJh46wkhNL/GTNPZSY/FG5Cdl07/O14:0
+[   27409ms] [WARNING] The devicemotion events are blocked by permissions policy. See https://github.com/w3c/webappsec-permissions-policy/blob/master/features.md#sensor-features @ https://analytics.ae.com/sAgtHeDE7/e9jwJkPKg/kYQ3pJh46wkhNL/GTNPZSY/FG5Cdl07/O14:0
+[   28162ms] [ERROR] Failed to load resource: net::ERR_FAILED @ chrome-extension://invalid/:0
+[   32892ms] [ERROR] Failed to load resource: net::ERR_FAILED @ chrome-extension://invalid/:0
+[   33944ms] [LOG] __exponea_etc__ success  9 @ https://www.ae.com/us/en:38
+[   34007ms] [LOG] clarityTester false @ https://www.ae.com/us/en:38
+[   34008ms] [LOG] clarityExplorer false @ https://www.ae.com/us/en:38
+[   34008ms] [LOG] Clarity Disabled @ https://www.ae.com/us/en:38
+[   34008ms] [LOG] clarityTester false @ https://www.ae.com/us/en:38
+[   34009ms] [LOG] clarityExplorer false @ https://www.ae.com/us/en:38
+[   34009ms] [LOG] [updateCustomerProfile] Enabled: false @ https://www.ae.com/us/en:38
+[   34902ms] [ERROR] Creating a worker from 'blob:https://analytics.ae.com/50465d13-bbd2-4738-a564-ce3793d5e901' violates the following Content Security Policy directive: "worker-src 'none'". The action has been blocked. @ https://analytics.ae.com/sAgtHeDE7/e9jwJkPKg/kYQ3pJh46wkhNL/GTNPZSY/FG5Cdl07/O14:0
+[   36376ms] [LOG] Bloomreach: Email remarketing started @ https://www.ae.com/us/en:38
+[   37173ms] [WARNING] The resource https://apps.rokt.com/icons/rokt-icons.woff was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://rkt.ae.com/wsdk/plugins/dcui/index.html:0
+[   38043ms] [LOG] Bloomreach: Banner shown 1 time(s) @ https://www.ae.com/us/en:38
