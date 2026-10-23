@@ -1,0 +1,67 @@
+import { expect, test } from '@playwright/test';
+
+declare const process: {
+  env: Record<string, string | undefined>;
+};
+
+const username = process.env.SF_USERNAME;
+const password = process.env.SF_PASSWORD;
+const loginUrl = process.env.SF_LOGIN_URL || 'https://login.salesforce.com';
+
+test.describe('Salesforce Lightning - Accounts', () => {
+  test('faz login, cria uma conta e verifica o registro', async ({ page }) => {
+    if (!username || !password) {
+      test.skip(
+        true,
+        'Defina SF_USERNAME e SF_PASSWORD para executar o teste de integração com o Salesforce.',
+      );
+      return;
+    }
+
+    test.setTimeout(120_000);
+
+    const uniqueId = new Date().toISOString().replace(/[-:.TZ]/g, '');
+    const accountName = `Playwright E2E ${uniqueId}`;
+    const phone = '415-555-0136';
+    const website = 'https://example.com';
+    const description = `Conta criada pelo teste automatizado ${uniqueId}`;
+
+    await page.goto(loginUrl);
+    await page.locator('#username').fill(username);
+    await page.locator('#password').fill(password);
+    await page.locator('#Login').click();
+
+    const navigationMenu = page.getByRole('button', {
+      name: /show navigation menu/i,
+    });
+    await expect(navigationMenu).toBeVisible({ timeout: 90_000 });
+
+    await navigationMenu.click();
+    await page.getByRole('menuitem', { name: 'Accounts', exact: true }).click();
+
+    await expect(
+      page.getByRole('heading', { name: 'Accounts', exact: true }),
+    ).toBeVisible();
+
+    await page.getByRole('button', { name: 'New', exact: true }).click();
+    const newAccountDialog = page.getByRole('dialog');
+    await expect(newAccountDialog).toBeVisible();
+
+    await newAccountDialog.getByLabel('Account Name').fill(accountName);
+    await newAccountDialog.getByLabel('Phone').fill(phone);
+    await newAccountDialog.getByLabel('Website').fill(website);
+    await newAccountDialog.getByLabel('Description').fill(description);
+    await newAccountDialog
+      .getByRole('button', { name: 'Save', exact: true })
+      .click();
+
+    await expect(newAccountDialog).toBeHidden();
+    await expect(page.getByText(/was created/i)).toBeVisible();
+    await expect(page.getByText(accountName, { exact: true }).first()).toBeVisible();
+
+    await page.getByRole('tab', { name: 'Details', exact: true }).click();
+    await expect(page.getByText(phone, { exact: true })).toBeVisible();
+    await expect(page.getByText(website, { exact: true })).toBeVisible();
+    await expect(page.getByText(description, { exact: true })).toBeVisible();
+  });
+});
