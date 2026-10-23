@@ -4,6 +4,13 @@ Projeto de testes end-to-end com Playwright Test e TypeScript. Os testes de exem
 locais rodam com `npm test`; o teste Salesforce é separado porque precisa de acesso a
 uma organização Salesforce.
 
+Quando um teste falha, o Playwright salva uma captura de tela e a inclui como anexo
+no relatório HTML. Para abrir o relatório após a execução, use:
+
+```sh
+npx playwright show-report
+```
+
 ## Teste Salesforce Lightning
 
 O teste faz login, abre **Accounts**, cria uma conta com nome exclusivo e valida os
